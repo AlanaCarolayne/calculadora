@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap");
+
+:root {
+  --cor-fonte: #EEEEEE;
+  --fonte: "Victor Mono", monospace;
+  --cor-fundo: #46d1e4;
+  --cor-botao: #222831;
+  --cor-botao-depois: #393E46;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+.container {
+  background: linear-gradient(0deg, rgba(55,67,163,1) 0%, rgba(33,43,133,1) 51%, rgba(11,19,105,1) 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 110vh;
+ 
+}
+.title {
+  color: var(--cor-fonte);
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.calculadora {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(20, 20, 24);
+  margin: 5px 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 95vh;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: minmax(120px, auto)repeat(5, 70px);
+}
+.calculadora > button{
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid var(--cor-botao-depois);
+  background-color: var(--cor-botao);
+  color: var(--cor-fonte);
+  border-radius: 7px;
+  margin: 2px;
+}
+.calculadora > button:hover{
+  background-color: var(--cor-botao-depois);
+}
+.botao_c, .botao_igual{
+  grid-column: span 2;
+}
+.display{
+  grid-column:  1 / -1;
+  background-color: var(--cor-fundo);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+.display .conta{
+  color: var(--cor-botao);
+  font-size: 1em;
+  font-weight: 600;
+}
+.display .resultado{
+  color: var(--cor-botao);
+  font-size: 1.2em;
+  font-weight: 600;
+}
