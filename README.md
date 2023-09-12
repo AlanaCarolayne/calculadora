@@ -2,7 +2,7 @@
 
 ## Sobre o projeto:
 
-### O projeto tem como intuito criar uma calculadora através de HTML, CSS e construir a lógixca utilizando JavaScript.
+### O projeto tem como intuito criar uma calculadora através de HTML, CSS e construir a lógica utilizando JavaScript.
 
 ### Foi utilizado o conceito de POO (Programação Orientada a Objetos) para realizar a criação de métodos da calculadora.
 
